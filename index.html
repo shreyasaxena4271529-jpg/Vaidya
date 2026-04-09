@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAIDYA - AI Health Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🏥 VAIDYA</h1>
+                <p class="subtitle">AI Health Assistant</p>
+            </div>
+        </header>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            <p>⚠️ <strong>Disclaimer:</strong> This chatbot is for informational purposes only and not a medical diagnosis. Always consult a qualified healthcare professional.</p>
+        </div>
+
+        <!-- Chat Container -->
+        <main class="chat-container">
+            <!-- Messages Display Area -->
+            <div class="messages" id="messagesContainer">
+                <!-- Initial Welcome Message -->
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Hello! 👋 I'm VAIDYA, your AI health assistant.</p>
+                        <p>I can help you understand common symptoms and provide general health information.</p>
+                        <p>How are you feeling today? Please describe your symptoms.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    class="input-field" 
+                    placeholder="Describe your symptoms... (e.g., 'I have a fever' or 'headache')"
+                    autocomplete="off"
+                >
+                <button id="sendBtn" class="send-btn">➤</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
